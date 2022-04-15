@@ -6,6 +6,18 @@ module.exports={
         filename:'script.js',
         path:path.resolve(__dirname,'dist')
     },
-    mode:'production'
+    mode:'production',
+
+module:{
+        rules:[
+            {
+            //verifica se arquivos termina com .css
+            test:/\.css$/,
+            //usa este arquivo
+            use:['style-loader','css-loader']
+            }
+
+        ]
+    }
 
 };
