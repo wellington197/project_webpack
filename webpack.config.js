@@ -15,7 +15,15 @@ module:{
             test:/\.css$/,
             //usa este arquivo
             use:['style-loader','css-loader']
-            }
+            },
+
+            {
+                //verifica se possui imagens com os seguintes formatos
+                test:/\.(png|jpg|gif|svg)$/,
+                //usa este arquivo
+                use:['file-loader']
+                }
+    
 
         ]
     }

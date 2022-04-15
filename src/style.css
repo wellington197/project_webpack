@@ -5,3 +5,23 @@
     border: 4px solid ;
 
 }
+
+.sass, .python, .mongodb{
+
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.sass{
+    background-image: url('./images/sass.svg');
+}
+.python{
+    background-image: url('./images/python.svg');
+}
+.mongodb{
+    background-image: url('./images/mongodb.svg');
+}
